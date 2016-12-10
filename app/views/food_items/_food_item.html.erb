@@ -1,0 +1,9 @@
+<div class="food_item">
+  <span class="food_store_name">
+    <%= "#{food_item.name}" %>
+  </span>
+  <span class="exp_message">
+    <%= exp_calc(food_item) %>
+  </span>
+  <%= button_to "Delete", food_store_food_item_path(@food_store, food_item), method: :delete %>
+</div>

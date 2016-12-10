@@ -1,0 +1,23 @@
+<div class="container row small-medium-large-12">
+  <a class="new_store button" href="#" data-reveal-id="storeNew">
+    Add a storage unit
+  </a>
+  <div id="storeNew" class="reveal-modal" data-reveal aria-labelledby="modalTitle"
+   aria-hidden="true" role="dialog">
+    <h2 id="modalTitle">Add a new storage unit</h2>
+    <%= form_for :food_stores do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.submit "Create" %>
+    <% end %>
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+  </div>
+</div>
+
+
+<% if @food_stores %>
+  <%= render @food_stores %>
+<% else %>
+  <%= "<h4>You don't have any food storage." %>
+<% end %>

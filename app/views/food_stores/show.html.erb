@@ -1,0 +1,15 @@
+<h2><%= @food_store.name %></h2>
+<div class="container row small-medium-large-12">
+  <a class="new_item button" href="#" data-reveal-id="itemNew">
+    Add a food item
+  </a>
+  <%= render "food_items/new" %>
+</div>
+
+<div class="food_item_container">
+  <% if @food_items %>
+    <%= render @food_items %><br>
+  <% else %>
+    <h4>This storage unit doesn't have any food!</h4>
+  <% end %>
+</div>

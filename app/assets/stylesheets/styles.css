@@ -1,0 +1,112 @@
+/*box-shadow: 10px 10px 5px grey;*/
+
+/*body {
+  overflow: hidden;
+}*/
+
+.food_item_container {
+  overflow:scroll;
+  margin-top: 5em;
+}
+.food_item {
+  width:500px;
+  border-bottom: 2px;
+  border-top: 2px;
+  margin: auto;
+  margin-bottom: 10px;
+  border-width: 2px;
+  border-color: black;
+  font-size: 1.25em;
+}
+.expired {
+  color: red;
+}
+
+.container {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.task_container {
+  text-align: left;
+}
+
+.task {
+  text-align: center;
+  background-color: #C5CDF5;
+	width: 30em;
+  margin-bottom: 1em;
+}
+
+.task h4, p {
+  display: inline;
+}
+
+.task_name {
+  display: block;
+  float:left;
+
+}
+
+.times {
+  float: right;
+  width: 10em;
+  top: 1em;
+}
+
+.edit_task {
+  position: relative;
+  top: 0.25em;
+  right: -1em;
+}
+
+.task_options {
+  position: absolute;
+  display: inline;
+  display: none;
+  background-color: white;
+  list-style-type: none;
+  width: 5em;
+  height: 5em;
+}
+
+.task_options ul {
+  list-style-type: none;
+}
+
+.task_start_time {
+  color: green;
+  text-align: left;
+  font-size: 1em;
+
+}
+
+.task_end_time {
+  color: red;
+  text-align: left;
+  position: relative;;
+  font-size: 1em;
+}
+
+.new_task {
+  text-align:center;
+  margin:auto;
+}
+
+.suggestionContainer {
+  float: right;
+  margin-right: 5em;
+  text-align: center;
+}
+
+.freeBlock {
+  background-color: grey;
+  margin: auto;
+  margin-bottom: 1em;
+  height: 4em;
+  width: 20em;
+}
+
+.freeBlockTimes {
+  font-size: 1.2em;
+}
